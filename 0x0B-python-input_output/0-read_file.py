@@ -2,12 +2,15 @@
 
 
 def read_file(filename=""):
-    """A functions that reads a text file and prints it to stdout
+    """Reads a text file and prints its content to stdout.
 
     Args:
         filename (str): The name of the file to read from.
 
     """
-
     with open(filename, encoding="utf-8") as f:
-        print(f.read(), end="")
+        for line in f:
+            print(line, end="")
+
+# Example usage:
+read_file("example.txt")
