@@ -1,0 +1,6 @@
+
+    ent base geometry."""
+
+    def area(self):
+        """Not implemented."""
+        raise Exception("area() is not implemented")""Return a list of an object's available attributes."""
